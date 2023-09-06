@@ -12,7 +12,9 @@ import GameCard from '@/components/gameCard'
 
 const SearchGame = async ({params}: ParamsSearchGame ) => {
 
-    const games: Game[] | null = await fethDelayGame(`next-api/?api=game&title=${params.title}`)
+    const decodeTitle = decodeURI(params.title)
+
+    const games: Game[] | null = await fethDelayGame(`next-api/?api=game&title=${decodeTitle}`)
 
     return(
         <main>

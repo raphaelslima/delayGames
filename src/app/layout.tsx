@@ -10,6 +10,20 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'DalyGames',
   description: 'Procure os melhores jogos do momento',
+  keywords: ['jogos', 'games', 'videoGames'],
+  openGraph: {
+    images: [`${process.env.PROJECT_URL}/preview.png`]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+      googleBot:{
+        index: true,
+        follow: true,
+        noimageindex:true
+      }
+  }
 }
 
 import Header from '@/components/header'
