@@ -4,6 +4,7 @@ import Link from "next/link";
 //Componets
 import Container from "@/components/container";
 import InputSearch from "@/components/inputSearch";
+import GamesGallery from "@/components/gamesGallery";
 
 //Helpers
 import { fethDelayGame } from '@/helpers/helpers'
@@ -42,6 +43,7 @@ export default async function Home() {
           </section>
         </Link>
         <InputSearch/>
+        <GamesGallery/>
       </Container>
     </main>
   )
