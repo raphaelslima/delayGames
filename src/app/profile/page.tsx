@@ -4,6 +4,7 @@ import Image from "next/image"
 
 // Components
 import Container from "@/components/container"
+import FavCard from "./components/favCard"
 
 //img
 import userImg from 'public/user.png'
@@ -36,8 +37,12 @@ const Profile = ()=>{
                                     <BsShare/>
                                 </button>
                         </div>
-                    </div>
-                        
+                    </div> 
+                </section>
+                <section className="w-full flex flex-col sm:flex-row items-center justify-center gap-5 flex-wrap mt-5">
+                    <FavCard/>
+                    <FavCard/>
+                    <FavCard/>  
                 </section>
             </Container>
         </main>
