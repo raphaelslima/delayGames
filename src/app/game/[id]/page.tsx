@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation"
 import Image from "next/image"
+import { Metadata } from "next"
 
 //Components
 import Container from "@/components/container"
@@ -16,6 +17,30 @@ type GameDetailProps = {
 //Helpers
 import {fethDelayGame} from '@/helpers/helpers'
 import GameCard from "@/components/gameCard"
+
+
+export async function generateMetadata({params}: GameDetailProps): Promise<Metadata>{
+    const res: Game = await fetch(`${process.env.NEXT_API_URL}/next-api/?api=game&id=${params.id}`).then((res) => res.json())
+
+    return {
+        title: res.title,
+        description: `${res.description.slice(0,100)}...`,
+        openGraph:{
+            title: res.title,
+            images: [res.image_url]
+        },
+        robots:{
+            index: true,
+            follow: true,
+            nocache: true,
+            googleBot:{
+            index: true,
+            follow: true,
+            noimageindex:true
+      }
+        }
+    }
+}
 
 const GameDetail = async ({params}: GameDetailProps) => {
 
