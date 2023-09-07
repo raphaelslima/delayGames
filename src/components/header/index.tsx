@@ -4,8 +4,8 @@ import Link from 'next/link'
 //Imagem
 import logoImg from 'public/logo.svg'
 
-//Icons
-import {LiaGamepadSolid} from 'react-icons/lia'
+//Components
+import BtnLogin from '../btnLogin'
 
 const Header = () =>{
     return(
@@ -30,9 +30,7 @@ const Header = () =>{
                 </nav>
 
                 <div>
-                    <Link href='/profile'>
-                        <LiaGamepadSolid size={34} color='#475568' />
-                    </Link>
+                    <BtnLogin/>
                 </div>
             </div>
         </header>
