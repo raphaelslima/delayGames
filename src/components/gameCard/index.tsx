@@ -8,20 +8,22 @@ import {BsArrowRightCircle} from 'react-icons/bs'
 import {Game} from '@/types/game'
 
 type GameProps = {
-    game : Game
+    game : Game,
+    height: number,
+    objCover: string
 }
 
-const GameCard = ({game}: GameProps) => {
+const GameCard = ({game, height, objCover}: GameProps) => {
     return(
         <div>
-            <div key={game.id} className='w-full max-h-56 h-56 relative rounded-lg hover:scale-105 transition-all duration-300'> 
+            <div key={game.id} className={`w-full max-h-${height} h-${height} relative rounded-lg hover:scale-105 transition-all duration-300`}> 
                 <Link href={`/game/${game.id}`}>
                     <Image 
                         src={game.image_url}
                         alt={game.title}
                         priority={true}
                         fill={true}
-                        className="max-h-96 object-cover rounded-lg"
+                        className={`max-h-${height} ${objCover} rounded-lg`}
                         sizes="(max-width: 320px) 100vw, (max-width: 768px) 28vw, (max-width: 1280px) 20vw"
                     />
                 </Link>

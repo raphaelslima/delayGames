@@ -68,13 +68,13 @@ const GameDetail = async ({params}: GameDetailProps) => {
                         quality={100}
                         priority={true}
                         fill={true}
-                        className="max-h-96 object-cover opacity-70"
+                        className="max-h-96 object-center opacity-70"
                         sizes="(max-width: 320px) 100vw"
                     />
                 </div>
             <Container>
                 <h1 className="font-bold text-xl my-4">{game.title}</h1>
-                <p>{game.description}</p>
+                <p className="text-justify">{game.description}</p>
 
                 <h2 className="font-bold text-lg my-5" >Plataformas:</h2>
 
@@ -96,7 +96,7 @@ const GameDetail = async ({params}: GameDetailProps) => {
 
                 <h2 className="font-bold text-lg my-5">Game Recomendado:</h2>
 
-                <GameCard game={gameRandom}/>
+                <GameCard game={gameRandom} height={80} objCover="object-center"/>
             </Container>
         </main>
     )

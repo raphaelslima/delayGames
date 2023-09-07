@@ -25,7 +25,7 @@ export default async function Home() {
         <h1 className="text-center font-bold text-xl mt-8 mb-5">Separamos um jogo exclusivo para você!</h1>
         <Link href={`/game/${gameDay.id}`}  className="w-full">
           <section className="w-full bg-black rounded-lg ">
-            <div className="w-full max-h-96 h-48 relative rounded-lg">
+            <div className="w-full max-h-96 h-80 relative rounded-lg">
               <div className="absolute z-20 bottom-0 flex gap-2 items-center p-3">
                   <p className="font-bold text-xl text-white">{gameDay.title}</p>
                   <BsArrowRightSquare size={24} color='#fff'/>
