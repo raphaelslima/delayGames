@@ -13,7 +13,10 @@ type GameProps = {
     objCover: string
 }
 
+
+
 const GameCard = ({game, height, objCover}: GameProps) => {
+
     return(
         <div>
             <div key={game.id} className={`w-full max-h-${height} h-${height} relative rounded-lg hover:scale-105 transition-all duration-300`}> 
@@ -21,7 +24,6 @@ const GameCard = ({game, height, objCover}: GameProps) => {
                     <Image 
                         src={game.image_url}
                         alt={game.title}
-                        priority={true}
                         fill={true}
                         className={`max-h-${height} ${objCover} rounded-lg`}
                         sizes="(max-width: 320px) 100vw, (max-width: 768px) 28vw, (max-width: 1280px) 20vw"
