@@ -26,7 +26,7 @@ const SearchGame = async ({params}: ParamsSearchGame ) => {
                         <div className='grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4'>
                             {
                                 games.map((game)=> (
-                                    <GameCard game={game} height={50} objCover={'object-cover'}/>
+                                    <GameCard game={game} objCover={'object-cover'} width='full'/>
                             ))
                             }
                         </div>

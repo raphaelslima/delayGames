@@ -18,7 +18,7 @@ const GamesGallery = async () => {
             <div className='grid gap-7 grid-cols-1 md:grid-cols-3 xl:grid-col-4'>   
             {allGames.map((game)=> (
 
-                <GameCard game={game} height={'56'} objCover="object-center" width={'full'}/>
+                <GameCard game={game} objCover="object-center" width={'full'}/>
 
             ))}
             </div>

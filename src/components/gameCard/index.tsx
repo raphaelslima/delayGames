@@ -9,24 +9,23 @@ import {Game} from '@/types/game'
 
 type GameProps = {
     game : Game,
-    height: string,
     objCover: string,
     width: string
 }
 
 
 
-const GameCard = ({game, height, objCover, width}: GameProps) => {
+const GameCard = ({game, objCover, width}: GameProps) => {
 
     return(
         <div>
-            <div key={game.id} className={`w-full sm:w-${width} h-${height} relative rounded-lg hover:scale-105 transition-all duration-300`}> 
+            <div key={game.id} className={`w-full sm:w-${width} h-56 relative rounded-lg hover:scale-105 transition-all duration-300`}> 
                 <Link href={`/game/${game.id}`}>
                     <Image 
                         src={game.image_url}
                         alt={game.title}
                         fill={true}
-                        className={`max-h-${height} ${objCover} rounded-lg w-full`}
+                        className={`max-h-56 ${objCover} rounded-lg w-full`}
                     />
                 </Link>
             </div>

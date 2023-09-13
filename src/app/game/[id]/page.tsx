@@ -72,7 +72,7 @@ const GameDetail = async ({params}: GameDetailProps) => {
 
                 <h2 className="font-bold text-lg my-5">Game Recomendado:</h2>
 
-                <GameCard game={gameRandom} height={'56'} objCover="object-top" width={'1/2'}/>
+                <GameCard game={gameRandom} objCover="object-top" width={'1/2'}/>
             </Container>
         </main>
     )
