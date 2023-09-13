@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DelayGames
 
-## Getting Started
+Site de pesquisa de games.
 
-First, run the development server:
+Link: https://games-iota-three.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Tecnologias utilizadas:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<ul>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  <li>Next.js</li>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  <li>React.js</li>
 
-## Learn More
+  <li>TypeScript</li>
 
-To learn more about Next.js, take a look at the following resources:
+  <li>JavaScript</li>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  <li>Tailwind</li>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  <li>HTML</li>
 
-## Deploy on Vercel
+</ul>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Sobre a aplicação:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Essa aplicação foi criada a partir de uma API, consumindo os dados e os integrando construí um catalogo onde o usuário pode pesquisar por games.
+
+## Ficaria feliz com Feedbacks:
+
+Email: raphaeldesousalm@gmail.com <br>
+
+Linkdin: https://www.linkedin.com/in/raphaellima98/
